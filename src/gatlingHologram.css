@@ -1,0 +1,13 @@
+.gatling-holo-host{position:fixed;z-index:2147482000;pointer-events:none;isolation:isolate;filter:drop-shadow(0 0 12px var(--holo));animation:gatlingMaterialize .4s ease-out both;transform-origin:50% 95%}
+.gatling-holo-canvas{position:absolute;inset:0;display:block;z-index:3;pointer-events:none}
+.gatling-holo-platform{position:absolute;bottom:0;left:24%;right:24%;height:14%;border:2px solid var(--holo);border-radius:50%;box-shadow:0 0 18px var(--holo),inset 0 0 10px var(--holo);opacity:.7;animation:gatlingPulse .48s ease-in-out infinite alternate}
+.gatling-holo-scans{position:absolute;z-index:4;inset:8% 0 12%;background:repeating-linear-gradient(to bottom,transparent 0px,transparent 7px,rgba(86,233,255,.13) 8px,transparent 9px);mix-blend-mode:screen;animation:gatlingScan 1s linear infinite;opacity:.55}
+.gatling-holo-caption{position:absolute;z-index:5;left:0;right:0;bottom:-10px;text-align:center;color:var(--holo);font:900 9px/1.2 monospace;letter-spacing:1.2px;text-shadow:0 0 9px var(--holo)}
+.gatling-holo-source{box-shadow:0 0 20px 5px #52e9ff!important;outline:1px solid #d5faff;animation:gatlingPulse .35s infinite alternate}
+.gatling-holo-host.enemy~.gatling-holo-source{box-shadow:0 0 20px 5px #ff738c!important}
+.gatling-holo-bullet{position:fixed;z-index:2147482002;pointer-events:none;width:26px;height:4px;border-radius:99px;background:#fff;box-shadow:0 0 8px 3px var(--shot),0 0 18px 6px var(--shot);transform-origin:left center}
+.gatling-holo-fallback-art{position:absolute;z-index:3;inset:4%;width:92%;height:90%;object-fit:contain;filter:drop-shadow(0 0 13px var(--holo));animation:gatlingHover .9s ease-in-out infinite alternate}
+@keyframes gatlingMaterialize{from{opacity:0;transform:scale(.45)}to{opacity:1;transform:scale(1)}}
+@keyframes gatlingPulse{from{opacity:.35}to{opacity:.85}}
+@keyframes gatlingScan{to{background-position:0 18px}}
+@keyframes gatlingHover{to{transform:translateY(-5px) rotate(-2deg)}}
